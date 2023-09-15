@@ -3,17 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.Main.MainView"
              Title="MainView">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </ContentPage.Resources>
     
-    <StackLayout VerticalOptions="Center">
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-
-        <Label 
-            Text="hey aarnav"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </StackLayout>
-
+    <VerticalStackLayout>
+        <Grid Margin="25, 35, 20, 20">SS
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Stack Layout" />
+            <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Text="Button 0, 1" />
+            <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Button 1, 0" />
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="Button 1, 1" />
+        </Grid>
+    </VerticalStackLayout>
+    
 </ContentPage>
