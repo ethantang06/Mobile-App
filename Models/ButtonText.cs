@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MyFirstMobileApp.Models
 {
-    internal class TitlesMain
+    internal class ButtonText
     {
+        public static String ButtonName { get; } = "Stack Layout";
     }
 }
