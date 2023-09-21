@@ -13,8 +13,8 @@
     <VerticalStackLayout>
         <Grid Margin="25, 35, 20, 20">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -23,7 +23,8 @@
 
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding StackLayoutButtonTitle}" />
+                    Text="{Binding StackLayoutButtonTitle}" 
+                    Command="{Binding OnLayoutsClicked}" />
             <Button Grid.Row="0"
                     Grid.Column="1"
                     Text="Button 0, 1" />

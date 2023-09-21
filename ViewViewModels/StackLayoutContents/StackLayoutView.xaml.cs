@@ -1,9 +1,10 @@
 namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents;
 
-public partial class StackLayoutContents : ContentPage
+public partial class StackLayoutView : ContentPage
 {
-	public StackLayoutContents()
+	public StackLayoutView()
 	{
 		InitializeComponent();
+		//BindingContext = new StackLayoutModel();
 	}
 }
