@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMobileApp.Models
+namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
 {
-    internal class ButtonText
+    public class StackLayoutModel
     {
-        public static String ButtonName { get; } = "Stack Layout";
     }
 }

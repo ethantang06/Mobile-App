@@ -53,13 +53,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ViewViewModels\Main\MainView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	  <Compile Update="ViewViewModels\StackLayoutContents\StackLayoutView.xaml.cs">
+	    <DependentUpon>StackLayoutView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ViewViewModels\StackLayout\" />
+	  <MauiXaml Update="ViewViewModels\Main\MainView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\StackLayoutContents\StackLayoutView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

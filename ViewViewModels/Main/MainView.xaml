@@ -23,7 +23,7 @@
 
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding Button}" />
+                    Text="{Binding StackLayoutButtonTitle}" />
             <Button Grid.Row="0"
                     Grid.Column="1"
                     Text="Button 0, 1" />
