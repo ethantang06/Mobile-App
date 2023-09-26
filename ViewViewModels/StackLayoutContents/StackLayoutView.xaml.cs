@@ -5,6 +5,6 @@ public partial class StackLayoutView : ContentPage
 	public StackLayoutView()
 	{
 		InitializeComponent();
-		//BindingContext = new StackLayoutModel();
+		BindingContext = new StackLayoutViewModel();
 	}
 }

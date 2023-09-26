@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.StackLayoutContents.StackLayoutView"
-             Title="StackLayoutView">
+             Title="{Binding Title}">
 
     <ContentPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="Margin" Value="10" />
+            <Setter Property="Margin" Value="2" />
         </Style>
     </ContentPage.Resources>
 
@@ -25,18 +25,17 @@
             <Button Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding StackLayoutButtonTitle}" 
-                    Command="{Binding OnLayoutsClicked}" />
+                    Text="{Binding StackLayoutButtonTitle}" />
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    Text="Vertical Stack" />
+                    Text="{Binding VerticalStackButtonTitle}" />
             <Button Grid.Row="1"
                     Grid.Column="1"
-                    Text="Horizontal Stack" />
-            <Button Grid.Row="1"
-                    Grid.Column="2"
-                    Grid.ColumnSpan="0"
-                    Text="Absolute Layout" />
+                    Text="{Binding HorizontalStackButtonTitle}" />
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding AbsoluteLayoutButtonTitle}" />
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

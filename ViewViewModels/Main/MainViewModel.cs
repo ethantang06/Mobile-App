@@ -9,13 +9,15 @@ namespace MyFirstMobileApp.ViewViewModels.Main
     {
         public String StackLayoutButtonTitle { get; set; } = TitleMain.ButtonStackLayout;
 
-        public ICommand OnLayoutClicked { get; set; }
+        public ICommand OnLayoutsClicked { get; set; }
         public MainViewModel() 
         {
             Title = TitleMain.MainTitle;
 
-            OnLayoutClicked = new Command(OnStackLayoutClickedAsync);
+            OnLayoutsClicked = new Command(OnStackLayoutClickedAsync);
         }
+
+
 
         private async void OnStackLayoutClickedAsync()
         {
