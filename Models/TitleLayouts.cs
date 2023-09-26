@@ -13,6 +13,5 @@ namespace MyFirstMobileApp.Models
         public static String ButtonVerticalStack { get; } = "Vertical Stack";
         public static String ButtonHorizontalStack { get; } = "Horizontal Stack";
         public static String ButtonAbsoluteLayout { get; } = "Absolute Layout";
-        
     }
 }

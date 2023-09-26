@@ -8,7 +8,6 @@ namespace MyFirstMobileApp.ViewViewModels.Main
     public class MainViewModel : BaseViewModel
     {
         public String StackLayoutButtonTitle { get; set; } = TitleMain.ButtonStackLayout;
-
         public ICommand OnLayoutsClicked { get; set; }
         public MainViewModel() 
         {
@@ -16,9 +15,6 @@ namespace MyFirstMobileApp.ViewViewModels.Main
 
             OnLayoutsClicked = new Command(OnStackLayoutClickedAsync);
         }
-
-
-
         private async void OnStackLayoutClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new StackLayoutView());

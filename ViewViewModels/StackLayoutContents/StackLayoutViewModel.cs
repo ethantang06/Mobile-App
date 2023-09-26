@@ -14,7 +14,6 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
         public String VerticalStackButtonTitle { get; set; } = TitleLayouts.ButtonVerticalStack;
         public String HorizontalStackButtonTitle { get; set; } = TitleLayouts.ButtonHorizontalStack;
         public String AbsoluteLayoutButtonTitle { get; set; } = TitleLayouts.ButtonAbsoluteLayout;
-
         public StackLayoutViewModel()
         {
             Title = TitleLayouts.StackTitle;
