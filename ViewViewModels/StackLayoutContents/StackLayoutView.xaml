@@ -25,7 +25,8 @@
             <Button Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding StackLayoutButtonTitle}" />
+                    Text="{Binding StackLayoutButtonTitle}"
+                    Command="{Binding OnStackLayoutPageClicked}" />
             <Button Grid.Row="1"
                     Grid.Column="0"
                     Text="{Binding VerticalStackButtonTitle}" />
