@@ -13,7 +13,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         //Button Commands
         public ICommand OnLayoutsClicked { get; set; }
 
-        //Constructor
+         //Constructor
         public MainViewModel() 
         {
             Title = TitleMain.MainTitle;

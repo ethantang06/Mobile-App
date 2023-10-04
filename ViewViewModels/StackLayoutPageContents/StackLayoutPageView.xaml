@@ -18,18 +18,18 @@
         <StackLayout VerticalOptions="Fill"
                      HorizontalOptions="End">
 
-                    <BoxView WidthRequest="200"
+            <BoxView WidthRequest="200"
                      HeightRequest="100"
                      Color="LightGreen" />
             
         </StackLayout>
 
         <StackLayout VerticalOptions="EndAndExpand"
-             HorizontalOptions="Start">
+                     HorizontalOptions="Start">
 
             <BoxView WidthRequest="100"
-             HeightRequest="200"
-             Color="Pink" />
+                     HeightRequest="200"
+                     Color="Pink" />
             
         </StackLayout>
     </StackLayout>
