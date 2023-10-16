@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstMobileApp.ViewViewModels.StackLayoutContents.StackLayoutView"
+             x:Class="MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents.StackLayoutView"
              Title="{Binding Title}">
 
     <ContentPage.Resources>
@@ -29,14 +29,19 @@
                     Command="{Binding OnStackLayoutPageClicked}" />
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    Text="{Binding VerticalStackButtonTitle}" />
+                    Text="{Binding VerticalStackButtonTitle}"
+                    Command="{Binding OnVerticalLayoutClicked}" />
             <Button Grid.Row="1"
                     Grid.Column="1"
-                    Text="{Binding HorizontalStackButtonTitle}" />
+                    Text="{Binding HorizontalStackButtonTitle}"
+                    Command="{Binding OnHorizontalLayoutClicked}" />
             <Button Grid.Row="2"
                     Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    Text="{Binding AbsoluteLayoutButtonTitle}" />
+                    Text="{Binding AbsoluteLayoutButtonTitle}" 
+                    Command="{Binding OnAbsoluteLayoutClicked}" />
+            <Button Grid.Row="2"
+                    Grid.Column="1"
+                    Text="{Binding FlexLayoutButtonTitle}" />
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

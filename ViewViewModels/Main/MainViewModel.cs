@@ -1,9 +1,9 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
-using MyFirstMobileApp.ViewViewModels.StackLayoutContents;
+using MyFirstMobileApp.ViewViewModels.Main;
 using System.Windows.Input;
 
-namespace MyFirstMobileApp.ViewViewModels.Main
+namespace MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents
 {
     public class MainViewModel : BaseViewModel
     {
