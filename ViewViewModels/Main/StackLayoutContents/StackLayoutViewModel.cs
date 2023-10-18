@@ -1,5 +1,6 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents.FlexLayoutContents;
 using MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents.AbsoluteLayoutContents;
 using MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents.HorizontalLayoutContents;
 using MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents.StackLayoutPageContents;
@@ -27,6 +28,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents
         public ICommand OnVerticalLayoutClicked { get; set; }
         public ICommand OnHorizontalLayoutClicked { get; set; }
         public ICommand OnAbsoluteLayoutClicked { get; set; }
+        public ICommand OnFlexLayoutClicked { get; set; }
 
         //Constructor
         public StackLayoutViewModel()
@@ -41,6 +43,8 @@ namespace MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents
             OnHorizontalLayoutClicked = new Command(OnHorizontalLayoutClickedAsync);
 
             OnAbsoluteLayoutClicked = new Command(OnAbsoluteLayoutClickedAsync);
+
+            OnFlexLayoutClicked = new Command(OnFlexLayoutClickedAsync);
         }
 
         //Navigation
@@ -59,6 +63,10 @@ namespace MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents
         private async void OnAbsoluteLayoutClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new AbsoluteLayoutView());
+        }
+        private async void OnFlexLayoutClickedAsync()
+        { 
+            await Application.Current.MainPage.Navigation.PushAsync(new FlexLayoutView());
         }
     }
 }

@@ -8,6 +8,6 @@ namespace MyFirstMobileApp.Models
 {
     public static class TitleFlexLayout
     {
-        public static String FlexStackTitle { get; } = "Flex Stack Layout";
+        public static String FlexStackTitle { get; } = "Flex Layout";
     }
 }

@@ -41,7 +41,8 @@
                     Command="{Binding OnAbsoluteLayoutClicked}" />
             <Button Grid.Row="2"
                     Grid.Column="1"
-                    Text="{Binding FlexLayoutButtonTitle}" />
+                    Text="{Binding FlexLayoutButtonTitle}"
+                    Command="{Binding OnFlexLayoutClicked}" />
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

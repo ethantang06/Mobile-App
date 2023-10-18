@@ -7,15 +7,15 @@
     <AbsoluteLayout>
         <Label Text="Absolute!" 
                 FontSize="Title"
-                FontAttributes="Bold" 
+                FontAttributes="Bold"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="End"
                 AbsoluteLayout.LayoutBounds="0, 0, 390, 70"
                 AbsoluteLayout.LayoutFlags="None" />
-
+        
         <BoxView Color="Green" 
-                AbsoluteLayout.LayoutBounds="0.1, 0.2, 60, 35"
-                AbsoluteLayout.LayoutFlags="PositionProportional" />
+                 AbsoluteLayout.LayoutBounds="0.1, 0.2, 60, 35"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
         <Label Text="01" 
                FontSize="Medium"
                TextColor="White"
@@ -27,7 +27,7 @@
                  AbsoluteLayout.LayoutFlags="PositionProportional" />
         <Label Text="02" 
                FontSize="Medium"
-               TextColor="BlanchedAlmond"
+               TextColor="AntiqueWhite"
                FontAttributes="Bold" 
                AbsoluteLayout.LayoutBounds="0.5, 0.2, 120, 20"
                AbsoluteLayout.LayoutFlags="PositionProportional" />

@@ -8,6 +8,6 @@ namespace MyFirstMobileApp.Models
 {
     public static class TitleAbsoluteLayout
     {
-        public static String AbsoluteStackTitle { get; } = "Absolute Stack Layout";
+        public static String AbsoluteStackTitle { get; } = "Absolute Layout";
     }
 }
