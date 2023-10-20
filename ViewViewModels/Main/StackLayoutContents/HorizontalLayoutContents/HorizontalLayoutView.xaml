@@ -5,23 +5,21 @@
              Title="{Binding Title}">
 
     <HorizontalStackLayout>
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 Color="Red" />
 
         <BoxView WidthRequest="100"
-             HeightRequest="100"
-             Color="Red" />
+                 HeightRequest="100"
+                 Color="Green" />
 
         <BoxView WidthRequest="100"
-             HeightRequest="100"
-             Color="Green" />
+                 HeightRequest="100"
+                 Color="Blue" />
 
         <BoxView WidthRequest="100"
-             HeightRequest="100"
-             Color="Blue" />
-
-        <BoxView WidthRequest="100"
-             HeightRequest="100"
-             VerticalOptions="End"
-             Color="Purple" />
-
+                 HeightRequest="100"
+                 VerticalOptions="End"
+                 Color="Purple" />
     </HorizontalStackLayout>
 </ContentPage>
