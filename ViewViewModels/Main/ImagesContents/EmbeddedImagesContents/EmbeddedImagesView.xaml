@@ -3,11 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.Main.ImagesContents.EmbeddedImagesContents.EmbeddedImagesView"
              Title="{Binding Title}">
-    
+
     <VerticalStackLayout>
-        
         <Image Source="{Binding GetImageSource}"
                Aspect="AspectFill" />
-        
     </VerticalStackLayout>
 </ContentPage>
