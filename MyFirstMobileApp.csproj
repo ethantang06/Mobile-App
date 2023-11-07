@@ -49,7 +49,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\BoardGames\catan.jpg" />
+	  <None Remove="Resources\Images\BoardGames\checkers.jpg" />
+	  <None Remove="Resources\Images\BoardGames\life.jpg" />
+	  <None Remove="Resources\Images\BoardGames\monopoly.jpg" />
+	  <None Remove="Resources\Images\BoardGames\sorry.jpg" />
 	  <None Remove="Resources\Images\michael.PNG" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\BoardGames\catan.jpg" />
+	  <MauiImage Include="Resources\Images\BoardGames\checkers.jpg" />
+	  <MauiImage Include="Resources\Images\BoardGames\life.jpg" />
+	  <MauiImage Include="Resources\Images\BoardGames\monopoly.jpg" />
+	  <MauiImage Include="Resources\Images\BoardGames\sorry.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
