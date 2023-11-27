@@ -33,9 +33,9 @@ namespace MyFirstMobileApp.Models.Entities
                 //Create EntityCollectionWImages objects with sample data
                 new EntityCollectionWImages("Monopoly",ImageSource.FromFile("Images/BoardGames/monopoly.jpg"), "Hasbro"),
                 new EntityCollectionWImages("Sorry!",ImageSource.FromFile("Images/BoardGames/sorry.jpg"), "Hasbro"),
-                new EntityCollectionWImages("The Game of Life",ImageSource.FromFile("Images/BoardGames/monopoly.jpg"), "Hasbro"),
-                new EntityCollectionWImages("Checkers",ImageSource.FromFile("Images/BoardGames/monopoly.jpg"), "WS Game Company"),
-                new EntityCollectionWImages("Catan",ImageSource.FromFile("Images/BoardGames/monopoly.jpg"), "Klaus Teuber"),
+                new EntityCollectionWImages("The Game of Life",ImageSource.FromFile("Images/BoardGames/life.jpg"), "Hasbro"),
+                new EntityCollectionWImages("Checkers",ImageSource.FromFile("Images/BoardGames/checkers.jpg"), "WS Game Company"),
+                new EntityCollectionWImages("Catan",ImageSource.FromFile("Images/BoardGames/catan.jpg"), "Klaus Teuber"),
             };
 
             return boardgames;
