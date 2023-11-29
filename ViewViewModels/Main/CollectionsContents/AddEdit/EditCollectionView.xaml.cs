@@ -8,6 +8,6 @@ public partial class EditCollectionView : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = new EditCollectionViewModel();
-		GameTitle.Text = gameType.NameofGame;
+		GameName.Text = gameType.NameofGame;
 	}
 }

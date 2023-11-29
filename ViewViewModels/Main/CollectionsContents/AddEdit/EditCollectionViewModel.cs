@@ -43,7 +43,7 @@ namespace MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit
             EntityCollectionPage games = new EntityCollectionPage();
             games.NameofGame = _gameName;
 
-            MessagingCenter.Send<EntityCollectionPage>(games, "UpdateGames");
+            MessagingCenter.Send<EntityCollectionPage>(games, "UpdateGame");
             Application.Current.MainPage.Navigation.PopAsync();
         }
     }

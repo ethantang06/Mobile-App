@@ -2,8 +2,9 @@ namespace MyFirstMobileApp.ViewViewModels.Main.CollectionsContents.CollectionWIc
 
 public partial class CollectionWIconsView : ContentPage
 {
-	public CollectionWIconsView()
-	{
-		InitializeComponent();
-	}
+    public CollectionWIconsView()
+    {
+        InitializeComponent();
+        BindingContext = new CollectionsWIconsViewModel();
+    }
 }

@@ -41,7 +41,7 @@ namespace MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit
             EntityCollectionPage games = new EntityCollectionPage();
             games.NameofGame = _gameName;
 
-            MessagingCenter.Send<EntityCollectionPage>(games, "AddGames");
+            MessagingCenter.Send<EntityCollectionPage>(games, "AddGame");
 
             if (Application.Current.MainPage is NavigationPage navigationPage)
             {

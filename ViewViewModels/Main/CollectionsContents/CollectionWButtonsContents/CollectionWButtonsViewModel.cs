@@ -1,4 +1,5 @@
-﻿using MyFirstMobileApp.Models.Entities;
+﻿using MyFirstMobileApp.Models;
+using MyFirstMobileApp.Models.Entities;
 using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit;
@@ -6,16 +7,16 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Windows.Input;
 
-namespace MyFirstMobileApp.ViewViewModels.CollectionsWButtonsContents
+namespace MyFirstMobileApp.ViewViewModels.Main.CollectionsContents.CollectionWButtonsContents
 {
-    public class UpdateableCollectionViewModel : BaseViewModel
+    public class CollectionWButtonsViewModel : BaseViewModel
     {
         public ObservableCollection<EntityCollectionPage> GameCollection { get; set; }
 
-        public UpdateableCollectionViewModel()
+        public CollectionWButtonsViewModel()
         {
             //Set the title for this view
-            Title = TitleCollections.CollectionTitle;
+            Title = TitleCollectionsWButtons.MainTitle;
 
             //Create a new ObservableCollection to store games
             GameCollection = new ObservableCollection<EntityCollectionPage>();
@@ -64,16 +65,16 @@ namespace MyFirstMobileApp.ViewViewModels.CollectionsWButtonsContents
             // It's like a message sent from one part to another to share data or trigger actions.
             // MessagingCenter helps subscribe to and send these events.
             // In this code, when you add a game in AddCollectionView, it sends an "AddGame" event.
-            // UpdateableCollectionWButtonsViewModel listens for this event and updates the game list.
+            // CollectionWButtonsViewModel listens for this event and updates the game list.
             //****************************************************************************************
-            //Subscribe to the "AddGames" messaging event to receive updated data from AddCollectionView            
+            //Subscribe to the "AddGame" messaging event to receive updated data from AddCollectionView            
             MessagingCenter.Subscribe<EntityCollectionPage>(this, "AddGame", async (data) =>
             {
                 //Add the new game data to the collection
                 GameCollection.Add(data);
 
                 //Unsubscribe from the messaging event
-                MessagingCenter.Unsubscribe<EntityCollectionPage>(this, "AddGames");
+                MessagingCenter.Unsubscribe<EntityCollectionPage>(this, "AddGame");
             });
         });
 
@@ -90,11 +91,11 @@ namespace MyFirstMobileApp.ViewViewModels.CollectionsWButtonsContents
             // A messaging event is a way for different parts of your app to communicate.
             // It's like a message sent from one part to another to share data or trigger actions.
             // MessagingCenter helps subscribe to and send these events.
-            // In this code, when you update a game in EditCollectionView, it sends an "UpdateGames" event.
+            // In this code, when you update a game in EditCollectionView, it sends an "UpdateGame" event.
             // UpdateableCollectionWButtonsViewModel listens for this event and updates the game list.
             //****************************************************************************************
-            //Subscribe to the "UpdateGames" messaging event to receive updated data from EditCollectionView            
-            MessagingCenter.Subscribe<EntityCollectionPage>(this, "UpdateGames", updatedGame =>
+            //Subscribe to the "UpdateGame" messaging event to receive updated data from EditCollectionView            
+            MessagingCenter.Subscribe<EntityCollectionPage>(this, "UpdateGame", updatedGame =>
             {
                 //Update the game in the collection with the edited data
                 GameCollection[index] = updatedGame;
