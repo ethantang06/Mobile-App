@@ -2,6 +2,7 @@
 using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.Main;
 using MyFirstMobileApp.ViewViewModels.Main.CollectionsContents;
+using MyFirstMobileApp.ViewViewModels.Main.ControlContents;
 using MyFirstMobileApp.ViewViewModels.Main.ImagesContents;
 using System.Windows.Input;
 
@@ -16,12 +17,15 @@ namespace MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents
 
         public String CollectionsButtonTitle { get; set; } = TitleMain.ButtonCollection;
 
+        public String ControlButtonTitle { get; set; } = TitleMain.ButtonControl;
+
 
         //Button Commands
         public ICommand OnLayoutsClicked { get; set; }
 
         public ICommand OnImagesClicked { get; set; }
         public ICommand OnCollectionsClicked { get; set; }
+        public ICommand OnControlClicked { get; set; }
 
         //Constructor
         public MainViewModel() 
@@ -32,6 +36,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents
             OnLayoutsClicked = new Command(OnStackLayoutClickedAsync);
             OnImagesClicked = new Command(OnImagesClickedAsync);
             OnCollectionsClicked = new Command(OnCollectionsClickedAsync);
+            OnControlClicked = new Command(OnControlClickedAsync);
         }
 
         //Navigation
@@ -46,6 +51,10 @@ namespace MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents
         private async void OnCollectionsClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new CollectionsView());
+        }
+        private async void OnControlClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new ControlView());
         }
     }
 }

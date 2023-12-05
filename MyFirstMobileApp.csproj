@@ -94,6 +94,18 @@
 	  <MauiXaml Update="ViewViewModels\Main\CollectionsContents\CollectionWImagesContents\CollectionWImagesView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\ControlView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\SliderContents\SliderView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\StepperContents\StepperView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\SwitchContents\SwitchView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Main\ImagesContents\EmbeddedImagesContents\EmbeddedImagesView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
