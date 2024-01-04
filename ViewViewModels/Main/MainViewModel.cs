@@ -20,6 +20,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main.StackLayoutContents
         public String ControlButtonTitle { get; set; } = TitleMain.ButtonControl;
 
 
+
         //Button Commands
         public ICommand OnLayoutsClicked { get; set; }
 

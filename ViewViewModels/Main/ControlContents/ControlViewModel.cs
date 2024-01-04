@@ -21,6 +21,10 @@ namespace MyFirstMobileApp.ViewViewModels.Main.ControlContents
 
         public String SwitchButtonTitle { get; set; } = TitleControl.ButtonSwitch;
 
+        public String EntryButtonTitle { get; set; } = TitleControl.ButtonEntry;
+
+        public String PickerButtonTitle { get; set; } = TitleControl.ButtonPicker;
+
 
         //Button Commands
         public ICommand OnSliderClicked { get; set; }

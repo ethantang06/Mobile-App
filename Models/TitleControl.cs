@@ -12,5 +12,7 @@ namespace MyFirstMobileApp.Models
         public static String ButtonSlider { get; } = "Slider";
         public static String ButtonStepper { get; } = "Stepper";
         public static String ButtonSwitch { get; } = "Switch";
+        public static String ButtonEntry { get; } = "Entry";
+        public static String ButtonPicker { get; } = "Picker";
     }
 }
