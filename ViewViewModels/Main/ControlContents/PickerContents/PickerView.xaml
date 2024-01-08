@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerView"
+             Title="{Binding Title}"
+             Background="Black">
+
+    <StackLayout>
+
+
+        <ImageButton Source="Images/pickerbuttonred.png"
+                     VerticalOptions="StartAndExpand"
+                     HorizontalOptions="Center"
+                     Command="{Binding OnXAMLClicked}" />
+
+        <BoxView MinimumWidthRequest="30"
+                 BackgroundColor="Black" />
+
+        <Label Text="Welcome to the Picker!" 
+               FontSize="60" 
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand" 
+               TextColor="WhiteSmoke" 
+               FontFamily="OpenSans-Semibold" 
+               Margin="22"/>
+
+        <ImageButton Source="Images/pickerbuttonblue.png"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="End"
+                     Command="{Binding OnVMClicked}" />
+
+    </StackLayout>
+
+
+</ContentPage>

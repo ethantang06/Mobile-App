@@ -1,5 +1,7 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents;
+using MyFirstMobileApp.ViewViewModels.Main.ControlContents.EntryContents;
 using MyFirstMobileApp.ViewViewModels.Main.ControlContents.SliderContents;
 using MyFirstMobileApp.ViewViewModels.Main.ControlContents.StepperContents;
 using MyFirstMobileApp.ViewViewModels.Main.ControlContents.SwitchContents;
@@ -31,6 +33,9 @@ namespace MyFirstMobileApp.ViewViewModels.Main.ControlContents
 
         public ICommand OnStepperClicked { get; set; }
         public ICommand OnSwitchClicked { get; set; }
+        public ICommand OnEntryClicked { get; set; }
+        public ICommand OnPickerClicked { get; set; }
+
 
         //Constructor
         public ControlViewModel()
@@ -41,6 +46,8 @@ namespace MyFirstMobileApp.ViewViewModels.Main.ControlContents
             OnSliderClicked = new Command(OnSliderClickedAsync);
             OnStepperClicked = new Command(OnStepperClickedAsync);
             OnSwitchClicked = new Command(OnSwitchClickedAsync);
+            OnEntryClicked = new Command(OnEntryClickedAsync);
+            OnPickerClicked = new Command(OnPickerClickedAsync);
         }
 
         //Navigation
@@ -55,6 +62,14 @@ namespace MyFirstMobileApp.ViewViewModels.Main.ControlContents
         private async void OnSwitchClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new SwitchView());
+        }
+        private async void OnEntryClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new EntryView());
+        }
+        private async void OnPickerClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new PickerView());
         }
     }
 }

@@ -103,6 +103,18 @@
 	  <MauiXaml Update="ViewViewModels\Main\ControlContents\EntryContents\EntryView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\PickerContents\PickerResults\PickerResultsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\PickerContents\PickerView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\PickerContents\PickerVM\PickerVMView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\PickerContents\PickerXAML\PickerXAMLView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Main\ControlContents\SliderContents\SliderView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
