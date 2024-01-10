@@ -15,7 +15,7 @@ namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerR
 
         public PickerResultsViewModel(string value, ImageSource image)
         {
-            Title = TitlesPicker.PickerResultsTitle;
+            Title = TitlePicker.PickerResultsTitle;
             PickerSelection = value;
             ImageSrc = image;
         }

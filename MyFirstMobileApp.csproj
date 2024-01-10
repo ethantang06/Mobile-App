@@ -97,13 +97,22 @@
 	  <MauiXaml Update="ViewViewModels\Main\ControlContents\ControlView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\DatePickerContents\DatePickerView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\DatePickerContents\DatePickerVM\DatePickerVMView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\DatePickerContents\DatePickerXAML\DatePickerXAMLView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Main\ControlContents\EntryContents\EntryResults\EntryResultsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Main\ControlContents\EntryContents\EntryView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\Main\ControlContents\PickerContents\PickerResults\PickerResultsView.xaml">
+	  <MauiXaml Update="ViewViewModels\Main\ControlContents\PickerContents\PickerVM\PickerResults\PickerResultsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Main\ControlContents\PickerContents\PickerView.xaml">

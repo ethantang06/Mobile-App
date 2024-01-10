@@ -1,4 +1,6 @@
-namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerXAML;
+using MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerXAML;
+
+namespace MyFirstMobileApp.ViewViewModels.Main.ControlContents.PickerContents.PickerXAML;
 
 public partial class PickerXAMLView : ContentPage
 {

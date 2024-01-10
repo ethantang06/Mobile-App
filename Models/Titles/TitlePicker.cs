@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstMobileApp.Models
 {
-    public static class TitlesPicker
+    public static class TitlePicker
     {
         public static string PickerXAMLTitle { get; set; } = "Picker XAML";
         public static string PickerResultsTitle { get; set; } = "Picker Result";

@@ -1,5 +1,6 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.ControlContents.DatePickerContents;
 using MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents;
 using MyFirstMobileApp.ViewViewModels.Main.ControlContents.EntryContents;
 using MyFirstMobileApp.ViewViewModels.Main.ControlContents.SliderContents;
@@ -26,15 +27,17 @@ namespace MyFirstMobileApp.ViewViewModels.Main.ControlContents
         public String EntryButtonTitle { get; set; } = TitleControl.ButtonEntry;
 
         public String PickerButtonTitle { get; set; } = TitleControl.ButtonPicker;
+        public String DatePickerButtonTitle { get; set; } = TitleControl.ButtonDatePicker;
 
 
         //Button Commands
         public ICommand OnSliderClicked { get; set; }
-
         public ICommand OnStepperClicked { get; set; }
         public ICommand OnSwitchClicked { get; set; }
         public ICommand OnEntryClicked { get; set; }
         public ICommand OnPickerClicked { get; set; }
+        public ICommand OnDatePickerClicked { get; set; }
+
 
 
         //Constructor
@@ -48,6 +51,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main.ControlContents
             OnSwitchClicked = new Command(OnSwitchClickedAsync);
             OnEntryClicked = new Command(OnEntryClickedAsync);
             OnPickerClicked = new Command(OnPickerClickedAsync);
+            OnDatePickerClicked = new Command(OnDatePickerClickedAsync);
         }
 
         //Navigation
@@ -70,6 +74,10 @@ namespace MyFirstMobileApp.ViewViewModels.Main.ControlContents
         private async void OnPickerClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new PickerView());
+        }
+        private async void OnDatePickerClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new DatePickerView());
         }
     }
 }

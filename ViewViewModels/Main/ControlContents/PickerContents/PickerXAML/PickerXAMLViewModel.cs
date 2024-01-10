@@ -20,7 +20,7 @@ namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerX
 
         public PickerXAMLViewModel()
         {
-            Title = TitlesPicker.PickerXAMLTitle;
+            Title = TitlePicker.PickerXAMLTitle;
 
             OnSubmitClicked = new Command(OnSubmitClickedAsync);
         }
@@ -47,13 +47,13 @@ namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerX
 
             List<EntityCollectionWImages> chars = EntityCollectionWImages.GetSampleBoardGameData();
 
-            var result = chars.FirstOrDefault(x => x.BrandName.Equals(_selectedBoard));
+            var result = chars.FirstOrDefault(x => x.BoardGame.Equals(_selectedBoard));
 
             await Application.Current.MainPage.Navigation.PushAsync(new PickerResultsView(result.BoardGame, result.BoardImage));
 
             if (String.IsNullOrEmpty(_selectedBoard))
             {
-                await Application.Current.MainPage.DisplayAlert(TitlesPicker.PickerXAMLTitle, "A selection must be made!", "OK");
+                await Application.Current.MainPage.DisplayAlert(TitlePicker.PickerXAMLTitle, "A selection must be made!", "OK");
                 return;
             }
         }

@@ -20,7 +20,7 @@ namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerV
         public PickerVMViewModel()
         {
             //Set Title
-            Title = TitlesPicker.PickerVMTitle;
+            Title = TitlePicker.PickerVMTitle;
 
             //Get BoardGames from EntityCollectionWImages Class to Populate Picker
             this.GetBoardList();
@@ -34,7 +34,7 @@ namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerV
             var allBoardInfo = EntityCollectionWImages.GetSampleBoardGameData();
 
             //Filter and map the boardgame names from the list of EntityCollectionWImages objects
-            BoardList = allBoardInfo.Select(info => info.BrandName).ToList();
+            BoardList = allBoardInfo.Select(info => info.BoardGame).ToList();
             _boardgames = allBoardInfo;
         }
 
@@ -58,7 +58,7 @@ namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerV
             //Verify user made a selection
             if (string.IsNullOrEmpty(_selectedBoard))
             {
-                await Application.Current.MainPage.DisplayAlert(TitlesPicker.PickerVMTitle, "A selection must be made!", "OK");
+                await Application.Current.MainPage.DisplayAlert(TitlePicker.PickerVMTitle, "A selection must be made!", "OK");
                 return;
             }
 
@@ -66,12 +66,12 @@ namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerV
             var selectedBoardName = _selectedBoard;
 
             //Find the EntityCollectionWImages based on the selected boardgame name
-            var selectedBoardInfo = _boardgames.FirstOrDefault(info => info.BrandName == selectedBoardName);
+            var selectedBoardInfo = _boardgames.FirstOrDefault(info => info.BoardGame == selectedBoardName);
 
             if (selectedBoardInfo != null)
             {
                 //Combining game's name and brand's name into a single string for display
-                string name = $"{selectedBoardInfo.BoardGame} As {selectedBoardInfo.BrandName}";
+                string name = $"{selectedBoardInfo.BoardGame} By {selectedBoardInfo.BrandName}";
 
                 //Use selected BoardInfo.BoardImage for the games's image
                 await Application.Current.MainPage.Navigation.PushAsync(new PickerResultsView(name, selectedBoardInfo.BoardImage));

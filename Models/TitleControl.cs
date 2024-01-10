@@ -14,5 +14,6 @@ namespace MyFirstMobileApp.Models
         public static String ButtonSwitch { get; } = "Switch";
         public static String ButtonEntry { get; } = "Entry";
         public static String ButtonPicker { get; } = "Picker";
+        public static String ButtonDatePicker { get; } = "DatePicker";
     }
 }

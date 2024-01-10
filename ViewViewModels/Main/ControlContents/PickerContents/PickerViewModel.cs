@@ -1,10 +1,10 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerVM;
-using MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents.PickerXAML;
+using MyFirstMobileApp.ViewViewModels.Main.ControlContents.PickerContents.PickerXAML;
 using System.Windows.Input;
 
-namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents
+namespace MyFirstMobileApp.ViewViewModels.Main.ControlContents.PickerContents
 {
     public class PickerViewModel : BaseViewModel
     {
@@ -14,7 +14,7 @@ namespace MyFirstMobileApp.ViewViewModels.ControlContents.PickerContents
 
         public PickerViewModel()
         {
-            Title = TitlesPicker.PickerTitle;
+            Title = TitlePicker.PickerTitle;
 
             OnXAMLClicked = new Command(OnXAMLClickedAsync);
             OnVMClicked = new Command(OnVMClickedAsync);
